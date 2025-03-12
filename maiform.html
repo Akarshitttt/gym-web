@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <a href="#" class="logo"> <i class="fas fa-dumbbell"></i> DREAM MUSCLE</a>
+        </header>
+
+        <div class="register">
+            <h1><b>REGISTER</b></h1>
+            <form action="confirmation.html" method="GET">
+                <br>
+                <div>
+                    <label for="name">NAME:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your First Name" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="dob">DOB:</label><br>
+                    <input type="date" id="dob" name="dob" placeholder="Enter your date of birth" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="email">E-MAIL:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="phonenumber">PHONE NUMBER:</label><br>
+                    <input type="tel" id="phonenumber" name="phonenumber" placeholder="Enter your phone number" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="address">ADDRESS:</label><br>
+                    <input type="text" id="address" name="address" placeholder="Enter your address" required>
+                </div>
+                <br>
+
+                <div> 
+                    <label for="gender">GENDER:</label><br>
+                    <select id="gender" name="gender" required>
+                        <option value="" selected>Choose One</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <br>
+
+                <div> 
+                    <label for="plan">PLAN:</label><br>
+                    <select id="plan" name="plan" required>
+                        <option value="" selected>Choose One</option>
+                        <option value="basic">Basic</option>
+                        <option value="standard">Standard</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                </div>
+                <br>
+
+                <button type="submit" class="btn btn-primary" name="register_btn"><b>REGISTER</b></button>
+            </form>
+        </div>
+    </div>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fas fa-dumbbell"></i> DREAM MUSCLE</h3>
+            </div>
+        </div>
+        <div class="credit">&copy; all rights are reserved by <span>AKARSHIT AGNIHOTRI <i class="fas fa-dumbbell"></i> </span></div>
+    </section>
+</body>
+
+</html>

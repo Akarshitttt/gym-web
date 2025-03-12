@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"> <i class="fas fa-dumbbell"></i> DREAM MUSCLE</a>
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="registration.html" class="active">register</a>
+        </nav>
+    </header>
+
+    <section class="registration">
+        <h1 class="heading">Member Registration</h1>
+        <form id="registration-form">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <select id="plan" required>
+                <option value="" disabled selected>Select Membership Plan</option>
+                <option value="Basic">Basic</option>
+                <option value="Standard">Standard</option>
+                <option value="Premium">Premium</option>
+            </select>
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

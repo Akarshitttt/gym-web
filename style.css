@@ -1,0 +1,211 @@
+.dashboard {
+    padding: 50px 0;
+    text-align: center;
+    background: #185a9d;
+    color: #fff;
+    border: 10px solid;
+    border-image: linear-gradient(to right, #43cea2, #13212f) 1;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-image: url('/mac.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+.header{
+    background-color: #05090e;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.header .navbar{
+    text-decoration: none;
+}
+.dashboard::before, .dashboard::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5px solid transparent;
+    box-sizing: border-box;
+}
+
+.dashboard::before {
+    top: 0;
+    left: 0;
+    border-top-color: #43cea2;
+    border-left-color: #43cea2;
+    animation: borderEffect 2s linear infinite;
+}
+
+.dashboard::after {
+    bottom: 0;
+    right: 0;
+    border-bottom-color: #111f2e;
+    border-right-color: #185a9d;
+    animation: borderEffect 2s linear infinite reverse;
+}
+
+
+@keyframes borderEffect {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50% {
+        width: 100%;
+        height: 0;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.dashboard .heading {
+    font-size: 3rem;
+    color: #fff;
+    background-color: #111f2e;
+    width: 100%;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: none;
+}
+
+.dashboard .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.dashboard .box {
+    background:#141414;
+    border: 1px solid rgba(231, 79, 79, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.dashboard .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    transition: 0.5s;
+}
+
+.dashboard .box:hover::before {
+    left: 100%;
+}
+
+.dashboard .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard .box.active {
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.dashboard .box h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.dashboard .box p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.registration {
+    padding: 50px 0;
+    text-align: center;
+    background: linear-gradient(to right, #1c1b3d, #080d13);
+    color: #fff;
+}
+
+.registration .heading {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.registration form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.registration form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.registration form input:focus {
+    border-color: #fff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.registration form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.registration form select:focus {
+    border-color: #fff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.registration form .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.registration form .btn:hover {
+    background: #333;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
